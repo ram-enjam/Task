@@ -10,7 +10,6 @@ import { ApiService } from '../api.service';
 })
 export class LoginRegisterComponent implements OnInit {
   submitted: boolean = false;
-  // loginError: any = '';
   loginForm: FormGroup;
   errorMessage: any;
 

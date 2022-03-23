@@ -1,155 +1,142 @@
-
-body{
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:hsl(210, 38%, 95%);
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #edf2f7;
 }
-
-.main-box{
+.main-box {
   padding: 50px 0;
 }
-
-.float-right{
+.float-right {
   float: right;
 }
-
-.underline-text{
+.underline-text {
   text-decoration: underline;
 }
-
-.width-100{
+.width-100 {
   width: 100%;
 }
-
-a{
+a {
   cursor: pointer;
   color: unset;
 }
-
-.form{
-  background:#fff;
-  padding:30px 34px;
-  margin:24px 0 0;
-  min-width:400px;
-  min-height:273px;
-  border-radius:5px;
+.form {
+  background: #fff;
+  padding: 30px 34px;
+  margin: 24px 0 0;
+  min-width: 400px;
+  min-height: 273px;
+  border-radius: 5px;
   line-height: 24px;
-  box-shadow:0px 0px 12px rgb(0 0 0 / 15%)
+  box-shadow: 0 0 12px rgb(0 0 0 / 15%);
 }
-.input-field{
-  display:flex;
-  flex-direction:column;
-  gap:30px;
-  width:100%;
-  margin-bottom:30px;
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 30px;
 }
-.error{
+.error {
   border: 1px solid red;
 }
 .error-msg {
   color: red;
 }
-input{
-  padding:15px;
-  border-radius:5px;
-  border:1px solid transparent;
-  background:hsl(210, 38%, 95%);
+input {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: #dedede69;
   line-height: 24px;
-  outline:none;
+  outline: 0;
 }
-input:focus{
-  border-bottom:1px solid #e52444;
-/*   border-radius:5px; */
+input:focus {
+  border-bottom: 1px solid #e52444;
 }
-input[type="checkbox"]{
-  margin-right:10px;
+input[type="checkbox"] {
+  margin-right: 10px;
 }
-
-.sign-in-or{
+.sign-in-or {
   margin: 30px 0;
   text-align: center;
 }
-
 .action {
-  align-items:center;
-  border-color: hsl(214, 32%, 91%);
-  color: hsl(220, 26%, 14%);
-  display:flex;
+  align-items: center;
+  border-color: #e0e7ef;
+  color: #1a202c;
+  display: flex;
   gap: normal;
   justify-content: flex-end;
   line-height: 24px;
-  margin: 16px 0px 0px;
+  margin: 16px 0 0;
 }
-.action a{
-  border-color:hsl(214, 32%, 91%);
-  color:hsl(220, 26%, 14%);
-  font-family:Nunito;
-  font-size:14px;
-  gap:normal;
-  line-height:21px;
-  text-transform:capitalize;
+.action a {
+  border-color: #e0e7ef;
+  color: #1a202c;
+  font-family: Nunito;
+  font-size: 14px;
+  gap: normal;
+  line-height: 21px;
+  text-transform: capitalize;
 }
-
-.btn{
-  padding:10px 20px;
+.btn {
+  padding: 10px 20px;
   align-items: flex-start;
   background-color: #b2223a;
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
-  color: hsl(0, 0%, 100%);
-  font-size:14px;
-  font-weight:600;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
   gap: normal;
   letter-spacing: 1.4px;
   line-height: 21px;
-  margin: 0px 0px 0px 0;
+  margin: 0;
   padding: 8px 16px;
   text-align: center;
   text-transform: uppercase;
-  color:hsl(0, 0%, 100%);
-  font-family:Nunito;
-  cursor:pointer;
-  transition:.2s ease-in-out;
+  color: #fff;
+  font-family: Nunito;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
-.btn:hover{
-  /* background:#e52444; */
-  background:white;
-  box-shadow: #e1abb4 0px 0px 2px 2px;
+.btn:hover {
+  background: #fff;
+  box-shadow: #e1abb4 0 0 2px 2px;
   border: 1px solid #e52444;
   color: #e52444;
 }
-a{
-  text-decoration:none;
+a {
+  text-decoration: none;
 }
-
 button#btn\ btn-facebook {
-  background: #4267B2;
+  background: #4267b2;
   font-size: 11px;
 }
-
-button#btn\ btn-facebook:hover{
-  background:#4267B2;
-  box-shadow: #4267b24f 0px 0px 2px 3px;
+button#btn\ btn-facebook:hover {
+  background: #4267b2;
+  box-shadow: #4267b24f 0 0 2px 3px;
+  color: white;
+  border: 0;
 }
-
 button#btn\ btn-google {
-  background: white;
-  color: black;
+  background: #fff;
+  color: #000;
   border: 1px solid;
   font-size: 11px;
 }
-button#btn\ btn-google:hover{
-  box-shadow: #2125293b 0px 0px 2px 3px;
+button#btn\ btn-google:hover {
+  box-shadow: #2125293b 0 0 2px 3px;
   border: 0;
 }
-
-button#btn\ btn-facebook img, button#btn\ btn-google img {
+button#btn\ btn-facebook img,
+button#btn\ btn-google img {
   margin-right: 10px;
 }
-.heading{
+.heading {
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: 600;
