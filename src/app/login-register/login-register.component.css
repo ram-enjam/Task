@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
+*{
+  box-sizing:border-box;
+  font-family: 'Nunito', sans-serif;
+}
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:hsl(210, 38%, 95%);
+}
+
+.main-box{
+  padding: 50px 0;
+}
+
+.float-right{
+  float: right;
+}
+
+.underline-text{
+  text-decoration: underline;
+}
+
+.width-100{
+  width: 100%;
+}
+
+a{
+  cursor: pointer;
+  color: unset;
+}
+
+.form{
+  background:#fff;
+  padding:30px 34px;
+  margin:24px 0 0;
+  min-width:400px;
+  min-height:273px;
+  border-radius:5px;
+  line-height: 24px;
+  box-shadow:0px 0px 12px rgb(0 0 0 / 15%)
+}
+.input-field{
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+  width:100%;
+  margin-bottom:30px;
+}
+.error{
+  border: 1px solid red;
+}
+.error-msg {
+  color: red;
+}
+input[type="email"],input[type="password"]{
+  padding:15px;
+  border-radius:5px;
+  border:1px solid transparent;
+  background:hsl(210, 38%, 95%);
+  line-height: 24px;
+  outline:none;
+}
+input[type="email"]:focus,input[type="password"]:focus{
+  border-bottom:1px solid #e52444;
+/*   border-radius:5px; */
+}
+input[type="checkbox"]{
+  margin-right:10px;
+}
+
+.sign-in-or{
+  margin: 30px 0;
+  text-align: center;
+}
+
+.action {
+  align-items:center;
+  border-color: hsl(214, 32%, 91%);
+  color: hsl(220, 26%, 14%);
+  display:flex;
+  gap: normal;
+  justify-content: flex-end;
+  line-height: 24px;
+  margin: 16px 0px 0px;
+}
+.action a{
+  border-color:hsl(214, 32%, 91%);
+  color:hsl(220, 26%, 14%);
+  font-family:Nunito;
+  font-size:14px;
+  gap:normal;
+  line-height:21px;
+  text-transform:capitalize;
+}
+
+.btn{
+  padding:10px 20px;
+  align-items: flex-start;
+  background-color: #b2223a;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  color: hsl(0, 0%, 100%);
+  font-size:14px;
+  font-weight:600;
+  gap: normal;
+  letter-spacing: 1.4px;
+  line-height: 21px;
+  margin: 0px 0px 0px 0;
+  padding: 8px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color:hsl(0, 0%, 100%);
+  font-family:Nunito;
+  cursor:pointer;
+  transition:.2s ease-in-out;
+}
+.btn:hover{
+  background:#e52444;
+  box-shadow: #e1abb4 0px 0px 2px 3px;
+}
+a{
+  text-decoration:none;
+}
+
+button#btn\ btn-facebook {
+  background: #4267B2;
+  font-size: 11px;
+}
+
+button#btn\ btn-facebook:hover{
+  background:#4267B2;
+  box-shadow: #4267b24f 0px 0px 2px 3px;
+}
+
+button#btn\ btn-google {
+  background: white;
+  color: black;
+  border: 1px solid;
+  font-size: 11px;
+}
+button#btn\ btn-google:hover{
+  box-shadow: #2125293b 0px 0px 2px 3px;
+  border: 0;
+}
+
+button#btn\ btn-facebook img, button#btn\ btn-google img {
+  margin-right: 10px;
+}

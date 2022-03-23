@@ -1,0 +1,98 @@
+<div class="container main-box">
+  <h2>Welcome, Please Log in/ Create Account</h2>
+  <div class="row">
+    <div class="col-lg-6">
+      <form class="form" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+        <div *ngIf="errorMessage" class="error-msg">{{ errorMessage }}</div>
+        <div class="input-field">
+          <input
+            type="email"
+            placeholder="email adress *"
+            id="email"
+            formControlName="username"
+            required
+          />
+        </div>
+        <div class="input-field">
+          <input
+            type="password"
+            placeholder="password *"
+            id="password"
+            formControlName="password"
+            required
+          />
+        </div>
+        <div class="input-field">
+          <label for="remember">
+            <input type="checkbox" name="" id="remember" />Remember me
+            <a class="float-right underline-text">Forgot Password ?</a>
+          </label>
+        </div>
+        <div class="action">
+          <button
+            type="submit"
+            [disabled]="!loginForm.valid"
+            id="login-button"
+            class="btn width-100"
+          >
+            Sign in
+          </button>
+        </div>
+        <p class="sign-in-or">or</p>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="action">
+              <button id="btn btn-facebook" class="btn width-100">
+                <img
+                  width="20"
+                  src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png"
+                />Sign in with facebook
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="action">
+              <button id="btn btn-google" class="btn width-100">
+                <img
+                  width="20"
+                  src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+                />Sign in with google
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-6">
+      <div class="form">
+        <div class="input-field">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            placeholder="example@example.com"
+            id="email"
+            name="email"
+          />
+        </div>
+        <div class="input-field">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="********"
+            id="password"
+            name="password"
+          />
+        </div>
+        <div class="input-field">
+          <label for="remember">
+            <input type="checkbox" name="" id="remember" />Remember me
+          </label>
+        </div>
+        <div class="action">
+          <a href="#">forgot your password?</a>
+          <button id="btn" class="btn">Sign in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

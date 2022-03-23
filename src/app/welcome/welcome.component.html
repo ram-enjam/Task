@@ -1,0 +1,29 @@
+<h1>Welcome</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Photo</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Gender</th>
+      <th>DOB</th>
+      <th>Email</th>
+      <th>Created On</th>
+    </tr>
+  </thead>
+  <tbody>
+    <td>
+      <img
+        class="img"
+        *ngIf="loginUser && loginUser.image"
+        [src]="loginUser.image"
+      />
+    </td>
+    <td>{{ loginUser.first_name }}</td>
+    <td>{{ loginUser.last_name }}</td>
+    <td>{{ loginUser.gender }}</td>
+    <td>{{ loginUser.dob }}</td>
+    <td>{{ loginUser.email }}</td>
+    <td>{{ loginUser.create_date | date }}</td>
+  </tbody>
+</table>
