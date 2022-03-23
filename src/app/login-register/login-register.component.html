@@ -3,24 +3,13 @@
   <div class="row">
     <div class="col-lg-6">
       <form class="form" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+        <h3 class="heading">Log in</h3>
         <div *ngIf="errorMessage" class="error-msg">{{ errorMessage }}</div>
         <div class="input-field">
-          <input
-            type="email"
-            placeholder="email adress *"
-            id="email"
-            formControlName="username"
-            required
-          />
+          <input type="email" placeholder="email adress *" id="email" formControlName="username" required />
         </div>
         <div class="input-field">
-          <input
-            type="password"
-            placeholder="password *"
-            id="password"
-            formControlName="password"
-            required
-          />
+          <input type="password" placeholder="password *" id="password" formControlName="password" required />
         </div>
         <div class="input-field">
           <label for="remember">
@@ -29,12 +18,7 @@
           </label>
         </div>
         <div class="action">
-          <button
-            type="submit"
-            [disabled]="!loginForm.valid"
-            id="login-button"
-            class="btn width-100"
-          >
+          <button type="submit" id="login-button" class="btn width-100">
             Sign in
           </button>
         </div>
@@ -43,20 +27,14 @@
           <div class="col-lg-6">
             <div class="action">
               <button id="btn btn-facebook" class="btn width-100">
-                <img
-                  width="20"
-                  src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png"
-                />Sign in with facebook
+                <img width="20" src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" />Sign in with facebook
               </button>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="action">
               <button id="btn btn-google" class="btn width-100">
-                <img
-                  width="20"
-                  src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
-                />Sign in with google
+                <img width="20" src="https://cdn-icons-png.flaticon.com/512/300/300221.png" />Sign in with google
               </button>
             </div>
           </div>
@@ -65,32 +43,39 @@
     </div>
     <div class="col-lg-6">
       <div class="form">
+        <h3 class="heading">Create an account</h3>
         <div class="input-field">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            placeholder="example@example.com"
-            id="email"
-            name="email"
-          />
+          <input type="text" placeholder="fullname *" id="email" name="fullname" />
         </div>
         <div class="input-field">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            placeholder="********"
-            id="password"
-            name="password"
-          />
+          <input type="email" placeholder="email address *" id="email" name="email" />
         </div>
         <div class="input-field">
-          <label for="remember">
-            <input type="checkbox" name="" id="remember" />Remember me
+          <input type="password" placeholder="password *" id="password" name="password" />
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder="confirm password *" id="password" name="password" />
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="interest" id="password" name="password" />
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="prefered size" id="password" name="password" />
+        </div>
+        <div class="input-field">
+          <label for="newsletter">
+            <input type="checkbox" name="" id="newsletter" />newsletter
+          </label>
+        </div>
+        <div class="input-field">
+          <label for="tc">
+            <input type="checkbox" name="" id="tc" />by registering you agree with our t&c and privacy policy.
           </label>
         </div>
         <div class="action">
-          <a href="#">forgot your password?</a>
-          <button id="btn" class="btn">Sign in</button>
+          <button type="submit" id="login-button" class="btn width-100">
+            create account
+          </button>
         </div>
       </div>
     </div>

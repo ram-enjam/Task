@@ -1,3 +1,10 @@
 .header{
     box-shadow: 0px 0px 5px 0px #b7b7b7;
 }
+.pr-2{
+    padding-right: 20px;
+}
+a.nav-link.text-secondary {
+    font-weight: 800;
+    color: black;
+}

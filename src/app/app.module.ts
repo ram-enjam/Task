@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AuthGuardService } from './auth-guard.service';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AuthGuardService } from './auth-guard.service';
     LoginRegisterComponent,
     WelcomeComponent,
     MenuComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
