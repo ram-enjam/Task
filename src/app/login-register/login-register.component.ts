@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { ApiService } from '../api.service';
 
 @Component({
@@ -15,7 +15,6 @@ export class LoginRegisterComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private route: ActivatedRoute,
     private apiservice: ApiService
   ) {}
 
