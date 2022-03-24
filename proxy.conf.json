@@ -1,0 +1,6 @@
+{
+  "/api":{
+    "targer": "https://admin.eniola.app/api/v1/login",
+    "secure": false
+  }
+}
